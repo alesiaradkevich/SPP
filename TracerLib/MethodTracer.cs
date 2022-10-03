@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
 
 namespace TracerLib
@@ -20,8 +19,8 @@ namespace TracerLib
             ClassName = sf.GetMethod().DeclaringType.Name;
             Time = new TimeSpan();
             InnerMethods = new List<MethodTracer>();
+            StopWatch = new Stopwatch();
         }
-
         public void StartTrace()
         {
             StopWatch.Start();

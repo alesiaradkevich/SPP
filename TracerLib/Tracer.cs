@@ -29,7 +29,8 @@ namespace TracerLib
 
         public void StopTrace()
         {
-            throw new NotImplementedException();
+            ThreadTracer currthreadTracer = GetThreadTrace(Thread.CurrentThread.ManagedThreadId);
+            currthreadTracer.StopTrace();
         }
 
         public ThreadTracer GetThreadTrace(int id)

@@ -1,0 +1,9 @@
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\bin\Debug\netcoreapp3.1\TracerLib.deps.json
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\bin\Debug\netcoreapp3.1\TracerLib.dll
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\bin\Debug\netcoreapp3.1\TracerLib.pdb
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\obj\Debug\netcoreapp3.1\TracerLib.csproj.AssemblyReference.cache
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\obj\Debug\netcoreapp3.1\TracerLib.AssemblyInfoInputs.cache
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\obj\Debug\netcoreapp3.1\TracerLib.AssemblyInfo.cs
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\obj\Debug\netcoreapp3.1\TracerLib.csproj.CoreCompileInputs.cache
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\obj\Debug\netcoreapp3.1\TracerLib.dll
+D:\универ\3 курс\5 сем\СПП\1lab\TracerLib\obj\Debug\netcoreapp3.1\TracerLib.pdb

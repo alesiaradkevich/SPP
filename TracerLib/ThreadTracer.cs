@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace TracerLib
 {
     public class ThreadTracer
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
         public TimeSpan Time;
+        public List<MethodTracer> methodTracers;
         public Stack<MethodTracer> UnstoppedMethodTracers;
 
         public ThreadTracer(int id)
         {
             Id = id;
             Time = new TimeSpan();
-            UnstoppedMethodTracers = new Stack<MethodTracer>();
+            UnstoppedMethodTracers = new Stack <MethodTracer>();
+            methodTracers = new List<MethodTracer>();
         }
+
+        public ThreadTracer() { }
 
         public void StartTrace()
         {
@@ -35,8 +38,14 @@ namespace TracerLib
             lastUnstoppedMethodTracer.StopTrace();
             if (UnstoppedMethodTracers.Count == 0)
             {
+                methodTracers.Add(lastUnstoppedMethodTracer);
+                Time += lastUnstoppedMethodTracer.Time;
 
             }
         }
+
+        
+
+        
     }
 }

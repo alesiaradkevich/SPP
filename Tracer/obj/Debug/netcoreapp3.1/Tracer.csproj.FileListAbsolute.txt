@@ -1,0 +1,17 @@
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Tracer.exe
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Tracer.deps.json
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Tracer.runtimeconfig.json
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Tracer.runtimeconfig.dev.json
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Tracer.dll
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Tracer.pdb
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\TracerLib.dll
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\TracerLib.pdb
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.csproj.AssemblyReference.cache
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.AssemblyInfoInputs.cache
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.AssemblyInfo.cs
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.csproj.CoreCompileInputs.cache
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.csproj.CopyComplete
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.dll
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.pdb
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\obj\Debug\netcoreapp3.1\Tracer.genruntimeconfig.cache
+D:\универ\3 курс\5 сем\СПП\1lab\Tracer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
