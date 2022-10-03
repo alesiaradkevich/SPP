@@ -14,22 +14,23 @@ namespace TracerLib
         public void Serialize(TextWriter textWriter, TraceResult traceResult)
         {
             XDocument xDocument = new XDocument(
-                new XElement("root", from threadTracer in traceResult.ThreadTraces.Values select SaveThread(threadTracer)));
+                new XElement("root", from threadTracer in traceResult.ThreadTraces.Values select SerializeThread(threadTracer)));
 
             XmlTextWriter xmlTextWriter = new XmlTextWriter(textWriter);
             xmlTextWriter.Formatting = Formatting.Indented;
             xDocument.WriteTo(xmlTextWriter);
+            xmlTextWriter.Flush();
         }
         
-        public XElement SaveThread(ThreadTracer threadTracer)
+        public XElement SerializeThread(ThreadTracer threadTracer)
         {
             return new XElement("thread",
                 new XAttribute("id", threadTracer.Id),
                 new XAttribute("time", threadTracer.Time.Milliseconds + "ms"),
-                from methodTracer in threadTracer.methodTracers select SaveMethod(methodTracer));
+                from methodTracer in threadTracer.methodTracers select SerializeMethod(methodTracer));
         }
 
-        public XElement SaveMethod(MethodTracer methodTracer)
+        public XElement SerializeMethod(MethodTracer methodTracer)
         {
             XElement xElement = new XElement("method",
                 new XAttribute("name", methodTracer.MethodName),
@@ -37,7 +38,7 @@ namespace TracerLib
                 new XAttribute("time", methodTracer.Time.Milliseconds + "ms"));
             if (methodTracer.InnerMethods.Count > 0)
             {
-                xElement.Add(from innerMethod in methodTracer.InnerMethods select SaveMethod(innerMethod));
+                xElement.Add(from innerMethod in methodTracer.InnerMethods select SerializeMethod(innerMethod));
             }
             return xElement;
         }

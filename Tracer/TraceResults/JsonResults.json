@@ -1,0 +1,51 @@
+{
+  "thread": [
+    {
+      "id": 1,
+      "time": "436ms",
+      "methods": [
+        {
+          "name": ".ctor",
+          "class": "MethodTracer",
+          "time": "326ms",
+          "methods": [
+            {
+              "name": ".ctor",
+              "class": "MethodTracer",
+              "time": "106ms"
+            },
+            {
+              "name": ".ctor",
+              "class": "MethodTracer",
+              "time": "109ms"
+            },
+            {
+              "name": ".ctor",
+              "class": "MethodTracer",
+              "time": "110ms"
+            }
+          ]
+        },
+        {
+          "name": ".ctor",
+          "class": "MethodTracer",
+          "time": "109ms",
+          "methods": [
+            {
+              "name": ".ctor",
+              "class": "MethodTracer",
+              "time": "109ms",
+              "methods": [
+                {
+                  "name": ".ctor",
+                  "class": "MethodTracer",
+                  "time": "109ms"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -20,8 +20,9 @@ namespace Tracer
             Method_1();
             Method_2();
             SaveToXml();
+            Console.WriteLine();
+            Console.WriteLine();
             SaveToJson();
-            ShowResults();
             Console.ReadLine();
         }
 
@@ -77,22 +78,27 @@ namespace Tracer
         public void SaveToXml()
         {
             String xmlPath = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\TraceResults\\XmlResults.xml");
-            FileStream fs = new FileStream(xmlPath, FileMode.Create);
+            FileStream fs = new FileStream(xmlPath, FileMode.Create, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs);
             TraceResult traceResult = Tracer.GetTraceResult();
             XmlSerializator xmlSerializator = new XmlSerializator();
             xmlSerializator.Serialize(sw, traceResult);
             xmlSerializator.Serialize(Console.Out, traceResult);
-
+            sw.Close();
+            fs.Close();
         }
 
         public void SaveToJson()
         {
+            String jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\TraceResults\\JsonResults.json");
+            FileStream fileStream = new FileStream (jsonPath, FileMode.Create);
+            StreamWriter streamWriter = new StreamWriter(fileStream);
+            TraceResult tracerResult = this.Tracer.GetTraceResult();
 
-        }
-        public void ShowResults()
-        {
-
+            JsonSerializator xmlSerializator = new JsonSerializator();
+            xmlSerializator.Serialize(streamWriter, tracerResult);
+            xmlSerializator.Serialize(Console.Out, tracerResult);
+            Console.WriteLine();
         }
     }
 }

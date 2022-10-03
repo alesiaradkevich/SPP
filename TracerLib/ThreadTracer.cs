@@ -18,7 +18,6 @@ namespace TracerLib
             methodTracers = new List<MethodTracer>();
         }
 
-        public ThreadTracer() { }
 
         public void StartTrace()
         {

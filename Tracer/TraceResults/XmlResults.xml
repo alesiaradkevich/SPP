@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <thread id="1" time="436ms">
+    <method name=".ctor" class="MethodTracer" time="326ms">
+      <method name=".ctor" class="MethodTracer" time="106ms" />
+      <method name=".ctor" class="MethodTracer" time="109ms" />
+      <method name=".ctor" class="MethodTracer" time="110ms" />
+    </method>
+    <method name=".ctor" class="MethodTracer" time="109ms">
+      <method name=".ctor" class="MethodTracer" time="109ms">
+        <method name=".ctor" class="MethodTracer" time="109ms" />
+      </method>
+    </method>
+  </thread>
+</root>
