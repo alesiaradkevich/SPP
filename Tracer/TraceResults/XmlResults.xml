@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <thread id="1" time="436ms">
-    <method name=".ctor" class="MethodTracer" time="326ms">
-      <method name=".ctor" class="MethodTracer" time="106ms" />
-      <method name=".ctor" class="MethodTracer" time="109ms" />
-      <method name=".ctor" class="MethodTracer" time="110ms" />
+  <thread id="1" time="433ms">
+    <method name="Method_1" class="Program" time="323ms">
+      <method name="InnerMethod_1_1" class="Program" time="103ms" />
+      <method name="InnerMethod_1_2" class="Program" time="110ms" />
+      <method name="InnerMethod_1_3" class="Program" time="109ms" />
     </method>
-    <method name=".ctor" class="MethodTracer" time="109ms">
-      <method name=".ctor" class="MethodTracer" time="109ms">
-        <method name=".ctor" class="MethodTracer" time="109ms" />
+    <method name="Method_2" class="Program" time="110ms">
+      <method name="InnerMethod_2_1" class="Program" time="110ms">
+        <method name="InnerMethod_2_1_1" class="Program" time="110ms" />
       </method>
     </method>
   </thread>

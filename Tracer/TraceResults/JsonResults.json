@@ -2,44 +2,44 @@
   "thread": [
     {
       "id": 1,
-      "time": "436ms",
+      "time": "433ms",
       "methods": [
         {
-          "name": ".ctor",
-          "class": "MethodTracer",
-          "time": "326ms",
+          "name": "Method_1",
+          "class": "Program",
+          "time": "323ms",
           "methods": [
             {
-              "name": ".ctor",
-              "class": "MethodTracer",
-              "time": "106ms"
+              "name": "InnerMethod_1_1",
+              "class": "Program",
+              "time": "103ms"
             },
             {
-              "name": ".ctor",
-              "class": "MethodTracer",
-              "time": "109ms"
-            },
-            {
-              "name": ".ctor",
-              "class": "MethodTracer",
+              "name": "InnerMethod_1_2",
+              "class": "Program",
               "time": "110ms"
+            },
+            {
+              "name": "InnerMethod_1_3",
+              "class": "Program",
+              "time": "109ms"
             }
           ]
         },
         {
-          "name": ".ctor",
-          "class": "MethodTracer",
-          "time": "109ms",
+          "name": "Method_2",
+          "class": "Program",
+          "time": "110ms",
           "methods": [
             {
-              "name": ".ctor",
-              "class": "MethodTracer",
-              "time": "109ms",
+              "name": "InnerMethod_2_1",
+              "class": "Program",
+              "time": "110ms",
               "methods": [
                 {
-                  "name": ".ctor",
-                  "class": "MethodTracer",
-                  "time": "109ms"
+                  "name": "InnerMethod_2_1_1",
+                  "class": "Program",
+                  "time": "110ms"
                 }
               ]
             }

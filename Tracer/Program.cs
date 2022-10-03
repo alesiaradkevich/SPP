@@ -81,9 +81,9 @@ namespace Tracer
             FileStream fs = new FileStream(xmlPath, FileMode.Create, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs);
             TraceResult traceResult = Tracer.GetTraceResult();
-            XmlSerializator xmlSerializator = new XmlSerializator();
-            xmlSerializator.Serialize(sw, traceResult);
-            xmlSerializator.Serialize(Console.Out, traceResult);
+            XmlSerializer xmlSerializer = new XmlSerializer();
+            xmlSerializer.Serialize(sw, traceResult);
+            xmlSerializer.Serialize(Console.Out, traceResult);
             sw.Close();
             fs.Close();
         }
@@ -95,9 +95,9 @@ namespace Tracer
             StreamWriter streamWriter = new StreamWriter(fileStream);
             TraceResult tracerResult = this.Tracer.GetTraceResult();
 
-            JsonSerializator xmlSerializator = new JsonSerializator();
-            xmlSerializator.Serialize(streamWriter, tracerResult);
-            xmlSerializator.Serialize(Console.Out, tracerResult);
+            JsonSerializer xmlSerializer = new JsonSerializer();
+            xmlSerializer.Serialize(streamWriter, tracerResult);
+            xmlSerializer.Serialize(Console.Out, tracerResult);
             Console.WriteLine();
         }
     }

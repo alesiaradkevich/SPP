@@ -14,7 +14,7 @@ namespace TracerLib
 
         public MethodTracer()
         {
-            StackFrame sf = new StackFrame();
+            StackFrame sf = new StackFrame(3);
             MethodName = sf.GetMethod().Name;
             ClassName = sf.GetMethod().DeclaringType.Name;
             Time = new TimeSpan();

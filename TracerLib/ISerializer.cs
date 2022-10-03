@@ -5,7 +5,7 @@ using System.IO;
 
 namespace TracerLib
 {
-    public interface ISerializator
+    public interface ISerializer
     {
         void Serialize(TextWriter textWriter,TraceResult traceResult);
     }

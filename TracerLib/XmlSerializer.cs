@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace TracerLib
 {
-    public class XmlSerializator : ISerializator
+    public class XmlSerializer : ISerializer
     {
         public void Serialize(TextWriter textWriter, TraceResult traceResult)
         {

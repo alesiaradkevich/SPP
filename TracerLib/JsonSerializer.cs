@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 
 namespace TracerLib
 {
-    public class JsonSerializator : ISerializator
+    public class JsonSerializer : ISerializer
     {
         public void Serialize(TextWriter textWriter, TraceResult traceResult)
         {
